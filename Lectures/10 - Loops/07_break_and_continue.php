@@ -46,11 +46,21 @@ Using break in a nested loop
 
 for (1 -> 10) {
 	for (1 -> 5) {
-		if 5 => break;
+		if 3 => break;
 	}
 }
 
 */
+
+for ($i=1; $i <= 10 ; $i++) { 
+	for ($j=1; $j <= 5; $j++) { 
+		if ($j == 3) {
+			break;
+		}
+
+		echo $j . ' ';
+	}
+}
 
 # Note: You can also use break and continue in while loops.
 
